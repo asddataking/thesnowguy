@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 py-8">
@@ -11,36 +13,36 @@ const Footer = () => {
         <nav className="mb-6">
           <ul className="flex justify-center space-x-6">
             <li>
-              <a
+              <Link
                 href="/"
                 className="text-gray-300 hover:text-gray-100 transition duration-300"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/services"
                 className="text-gray-300 hover:text-gray-100 transition duration-300"
               >
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/about"
                 className="text-gray-300 hover:text-gray-100 transition duration-300"
               >
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/contact"
                 className="text-gray-300 hover:text-gray-100 transition duration-300"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -60,7 +62,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-blue-500 mx-2"
           >
-            <i className="fab fa-facebook-f">FB</i>
+            FB
           </a>
           <a
             href="https://twitter.com"
@@ -68,7 +70,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-blue-400 mx-2"
           >
-            <i className="fab fa-twitter">TW</i>
+            TW
           </a>
           <a
             href="https://instagram.com"
@@ -76,7 +78,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-pink-500 mx-2"
           >
-            <i className="fab fa-instagram">IG</i>
+            IG
           </a>
         </div>
 
@@ -90,3 +92,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
