@@ -2,12 +2,15 @@
 const nextConfig = {
     reactStrictMode: true,
     images: {
-      domains: ['example.com'],
+      domains: ['example.com'], // Replace 'example.com' with the actual domains you need for images
     },
-    output: 'standalone',
   };
   
   export default nextConfig;
+  
+  
+
+
   
 
 
