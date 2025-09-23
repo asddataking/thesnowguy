@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-night: #0A2540;
+  --color-ice: #E6F0FF;
+  --color-holly: #2ECC71;
+  --color-candy: #FF4D4D;
+}
+
+/* Gentle falling snow (disabled if reduced motion) */
+@media (prefers-reduced-motion: no-preference) {
+  .snowflake {
+    position: absolute; 
+    top: -2rem; 
+    opacity: .85; 
+    user-select: none;
+    animation: fall linear infinite;
+  }
+  @keyframes fall { 
+    to { 
+      transform: translateY(120vh) rotate(360deg); 
+    } 
+  }
+}
+
+/* High-contrast focus rings */
+:focus-visible { 
+  outline: 3px solid #FFCC00; 
+  outline-offset: 2px; 
+}
