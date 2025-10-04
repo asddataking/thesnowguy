@@ -334,7 +334,7 @@ export default function Home() {
                     <div className="space-y-3 text-sm">
                       <div className="flex justify-between items-center bg-frost rounded-xl p-3">
                         <span className="font-semibold text-winter-blue">Response Time</span>
-                        <span className="text-accent-gold font-bold">< 2 hours</span>
+                        <span className="text-accent-gold font-bold">&lt; 2 hours</span>
                       </div>
                       <div className="flex justify-between items-center bg-frost rounded-xl p-3">
                         <span className="font-semibold text-winter-blue">Service Area</span>
