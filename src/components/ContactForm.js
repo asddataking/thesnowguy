@@ -53,14 +53,15 @@ export default function ContactForm() {
 
   if (isSubmitted) {
     return (
-      <div className="bg-accent-gold/20 border-2 border-accent-gold rounded-xl p-8 text-center">
-        <h3 className="text-2xl font-bold text-winter-blue mb-4">Thanks! We'll be in touch shortly.</h3>
-        <p className="text-body-text mb-6">
-          We'll call you within 24 hours to confirm your quote and schedule.
+      <div className="bg-white/20 backdrop-blur-sm border-2 border-accent-gold rounded-2xl p-8 text-center">
+        <div className="text-4xl mb-4">🎉</div>
+        <h3 className="text-3xl font-bold text-white mb-4">Thanks! We'll be in touch shortly.</h3>
+        <p className="text-white/90 mb-6 text-lg">
+          We'll call you within 24 hours to confirm your quote and schedule your shoveling service.
         </p>
         <a 
           href={`tel:${process.env.NEXT_PUBLIC_PHONE || '(810) 555-0123'}`}
-          className="bg-winter-blue text-white px-6 py-3 rounded-xl font-semibold hover:bg-winter-blue/90 transition-colors"
+          className="bg-accent-gold text-winter-blue px-8 py-4 rounded-xl font-semibold hover:bg-accent-gold/90 transition-all duration-200 shadow-xl hover:shadow-2xl hover:-translate-y-1"
         >
           Or Call Now
         </a>
@@ -72,9 +73,9 @@ export default function ContactForm() {
     <form className="mt-8 grid gap-6 max-w-2xl mx-auto" onSubmit={handleSubmit}>
       <div className="grid md:grid-cols-2 gap-6">
         <label className="block">
-          <span className="block mb-2 text-white font-semibold">Name *</span>
+          <span className="block mb-2 text-white font-semibold text-lg">Name *</span>
           <input 
-            className="w-full rounded-xl bg-white/10 border border-white/20 px-4 py-3 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-accent-gold" 
+            className="w-full rounded-xl bg-white/20 border border-white/30 px-4 py-4 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-accent-gold focus:border-accent-gold text-lg" 
             type="text" 
             name="name"
             value={formData.name}
@@ -84,9 +85,9 @@ export default function ContactForm() {
           />
         </label>
         <label className="block">
-          <span className="block mb-2 text-white font-semibold">Phone *</span>
+          <span className="block mb-2 text-white font-semibold text-lg">Phone *</span>
           <input 
-            className="w-full rounded-xl bg-white/10 border border-white/20 px-4 py-3 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-accent-gold" 
+            className="w-full rounded-xl bg-white/20 border border-white/30 px-4 py-4 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-accent-gold focus:border-accent-gold text-lg" 
             type="tel" 
             name="phone"
             value={formData.phone}
@@ -99,9 +100,9 @@ export default function ContactForm() {
 
       <div className="grid md:grid-cols-2 gap-6">
         <label className="block">
-          <span className="block mb-2 text-white font-semibold">Email</span>
+          <span className="block mb-2 text-white font-semibold text-lg">Email</span>
           <input 
-            className="w-full rounded-xl bg-white/10 border border-white/20 px-4 py-3 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-accent-gold" 
+            className="w-full rounded-xl bg-white/20 border border-white/30 px-4 py-4 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-accent-gold focus:border-accent-gold text-lg" 
             type="email" 
             name="email"
             value={formData.email}
@@ -110,9 +111,9 @@ export default function ContactForm() {
           />
         </label>
         <label className="block">
-          <span className="block mb-2 text-white font-semibold">Service Type *</span>
+          <span className="block mb-2 text-white font-semibold text-lg">Service Type *</span>
           <select 
-            className="w-full rounded-xl bg-white/10 border border-white/20 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-accent-gold" 
+            className="w-full rounded-xl bg-white/20 border border-white/30 px-4 py-4 text-white focus:outline-none focus:ring-2 focus:ring-accent-gold focus:border-accent-gold text-lg" 
             name="serviceType"
             value={formData.serviceType}
             onChange={handleChange}
@@ -125,9 +126,9 @@ export default function ContactForm() {
       </div>
 
       <label className="block">
-        <span className="block mb-2 text-white font-semibold">Address *</span>
+        <span className="block mb-2 text-white font-semibold text-lg">Address *</span>
         <input 
-          className="w-full rounded-xl bg-white/10 border border-white/20 px-4 py-3 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-accent-gold" 
+          className="w-full rounded-xl bg-white/20 border border-white/30 px-4 py-4 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-accent-gold focus:border-accent-gold text-lg" 
           type="text" 
           name="address"
           value={formData.address}
@@ -139,9 +140,9 @@ export default function ContactForm() {
 
       <div className="grid md:grid-cols-3 gap-6">
         <label className="block">
-          <span className="block mb-2 text-white font-semibold">Driveway Length</span>
+          <span className="block mb-2 text-white font-semibold text-lg">Driveway Length</span>
           <select 
-            className="w-full rounded-xl bg-white/10 border border-white/20 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-accent-gold" 
+            className="w-full rounded-xl bg-white/20 border border-white/30 px-4 py-4 text-white focus:outline-none focus:ring-2 focus:ring-accent-gold focus:border-accent-gold text-lg" 
             name="drivewayLength"
             value={formData.drivewayLength}
             onChange={handleChange}
@@ -152,9 +153,9 @@ export default function ContactForm() {
           </select>
         </label>
         <label className="block">
-          <span className="block mb-2 text-white font-semibold">Walkway Count</span>
+          <span className="block mb-2 text-white font-semibold text-lg">Walkway Count</span>
           <select 
-            className="w-full rounded-xl bg-white/10 border border-white/20 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-accent-gold" 
+            className="w-full rounded-xl bg-white/20 border border-white/30 px-4 py-4 text-white focus:outline-none focus:ring-2 focus:ring-accent-gold focus:border-accent-gold text-lg" 
             name="walkwayCount"
             value={formData.walkwayCount}
             onChange={handleChange}
@@ -166,9 +167,9 @@ export default function ContactForm() {
           </select>
         </label>
         <label className="block">
-          <span className="block mb-2 text-white font-semibold">Salting Needed?</span>
+          <span className="block mb-2 text-white font-semibold text-lg">Salting Needed?</span>
           <select 
-            className="w-full rounded-xl bg-white/10 border border-white/20 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-accent-gold" 
+            className="w-full rounded-xl bg-white/20 border border-white/30 px-4 py-4 text-white focus:outline-none focus:ring-2 focus:ring-accent-gold focus:border-accent-gold text-lg" 
             name="salting"
             value={formData.salting}
             onChange={handleChange}
@@ -181,9 +182,9 @@ export default function ContactForm() {
       </div>
 
       <label className="block">
-        <span className="block mb-2 text-white font-semibold">Preferred Timing</span>
+        <span className="block mb-2 text-white font-semibold text-lg">Preferred Timing</span>
         <select 
-          className="w-full rounded-xl bg-white/10 border border-white/20 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-accent-gold" 
+          className="w-full rounded-xl bg-white/20 border border-white/30 px-4 py-4 text-white focus:outline-none focus:ring-2 focus:ring-accent-gold focus:border-accent-gold text-lg" 
           name="timing"
           value={formData.timing}
           onChange={handleChange}
@@ -196,9 +197,9 @@ export default function ContactForm() {
       </label>
 
       <label className="block">
-        <span className="block mb-2 text-white font-semibold">Notes (gates, pets, special areas, etc.)</span>
+        <span className="block mb-2 text-white font-semibold text-lg">Notes (gates, pets, special areas, etc.)</span>
         <textarea 
-          className="w-full rounded-xl bg-white/10 border border-white/20 px-4 py-3 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-accent-gold" 
+          className="w-full rounded-xl bg-white/20 border border-white/30 px-4 py-4 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-accent-gold focus:border-accent-gold text-lg" 
           rows="4"
           name="notes"
           value={formData.notes}
@@ -208,11 +209,11 @@ export default function ContactForm() {
       </label>
 
       <button 
-        className="bg-accent-gold text-winter-blue px-8 py-4 rounded-xl text-lg font-semibold shadow-cozy hover:bg-accent-gold/90 transition-colors disabled:opacity-50" 
+        className="bg-accent-gold text-winter-blue px-10 py-5 rounded-xl text-xl font-bold shadow-2xl hover:bg-accent-gold/90 transition-all duration-200 hover:shadow-3xl hover:-translate-y-1 disabled:opacity-50" 
         type="submit"
         disabled={isSubmitting}
       >
-        {isSubmitting ? 'Submitting...' : 'Get My Quote'}
+        {isSubmitting ? 'Submitting...' : 'Get My Shoveling Quote'}
       </button>
     </form>
   );
