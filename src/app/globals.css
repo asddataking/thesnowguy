@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --color-night: #0A2540;
-  --color-ice: #E6F0FF;
-  --color-holly: #2ECC71;
-  --color-candy: #FF4D4D;
+  --color-winter-blue: #0A2A5E;
+  --color-frost: #E6F0FF;
+  --color-accent-gold: #D4AF37;
+  --color-body-text: #111827;
 }
 
 /* Gentle falling snow (disabled if reduced motion) */
@@ -16,17 +16,27 @@
     top: -2rem; 
     opacity: .85; 
     user-select: none;
-    animation: fall linear infinite;
+    animation: snowfall linear infinite;
   }
-  @keyframes fall { 
-    to { 
-      transform: translateY(120vh) rotate(360deg); 
+  @keyframes snowfall { 
+    0% { 
+      transform: translateY(-100vh) rotate(0deg); 
+      opacity: 1;
+    }
+    100% { 
+      transform: translateY(100vh) rotate(360deg); 
+      opacity: 0;
     } 
   }
 }
 
 /* High-contrast focus rings */
 :focus-visible { 
-  outline: 3px solid #FFCC00; 
+  outline: 3px solid #D4AF37; 
   outline-offset: 2px; 
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }

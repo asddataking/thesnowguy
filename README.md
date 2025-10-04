@@ -1,86 +1,76 @@
-# The Snow Guy - Next.js Website
+# The Snow Guy - Snow Removal Service
 
-A modern, responsive website for The Snow Guy snow shoveling service built with Next.js and Tailwind CSS.
+A fast, accessible, single-page marketing website for The Snow Guy—a family-owned, Michigan-based snow removal service serving St. Clair County.
 
 ## Features
 
-- ✨ Animated falling snow effect
-- 📱 Fully responsive design
-- 🎨 Custom color scheme (night, ice, holly, candy)
-- 📞 Contact form with phone integration
-- 💰 Pricing sections
-- 🗺️ Service area information
-- 💬 Customer testimonials
+- **Next.js 14** with App Router and TypeScript
+- **Tailwind CSS** with custom brand colors
+- **SEO Optimized** with JSON-LD schema, OpenGraph, and local SEO
+- **Accessible** with semantic HTML and keyboard navigation
+- **Performance** optimized with image optimization and lazy loading
+- **Lead Generation** form with API endpoint
+- **Responsive Design** for all devices
 
-## Getting Started
+## Brand Colors
 
-1. Install dependencies:
+- **Winter Blue**: `#0A2A5E` (primary)
+- **Frost**: `#E6F0FF` (light background)
+- **Accent Gold**: `#D4AF37` (highlights, CTAs)
+- **Body Text**: `#111827` (dark text)
+
+## Service Areas
+
+Serving St. Clair County, Michigan:
+- Kimball
+- Port Huron
+- Marysville
+- Fort Gratiot
+- St. Clair
+- Clyde
+- Columbus
+
+## Environment Variables
+
+Create a `.env.local` file with:
+
+```env
+NEXT_PUBLIC_PHONE=(810) 555-0123
+NEXT_PUBLIC_EMAIL=hello@thesnowguy.com
+NOTIFICATION_EMAIL=your-email@domain.com
+```
+
+## Development
+
 ```bash
 npm install
-```
-
-2. Create environment variables:
-Create a `.env.local` file in the root directory with:
-```
-NEXT_PUBLIC_PHONE=(555) 123-SNOW
-NEXT_PUBLIC_EMAIL=contact@thesnowguy.com
-NEXT_PUBLIC_CITY_LIST=St. Clair, Port Huron, and surrounding areas
-```
-
-3. Run the development server:
-```bash
 npm run dev
-```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## Customization
-
-### Colors
-The custom colors are defined in `tailwind.config.js`:
-- `night`: #0A2540 (dark blue background)
-- `ice`: #E6F0FF (light blue text)
-- `holly`: #2ECC71 (green accents)
-- `candy`: #FF4D4D (red accents)
-
-### Contact Information
-Update the environment variables in `.env.local`:
-- `NEXT_PUBLIC_PHONE`: Your phone number
-- `NEXT_PUBLIC_EMAIL`: Your email address
-- `NEXT_PUBLIC_CITY_LIST`: Your service areas
-
-### Content
-Edit the content directly in `src/app/page.js` or create additional pages as needed.
-
-## Project Structure
-
-```
-src/
-├── app/
-│   ├── globals.css      # Global styles and animations
-│   ├── layout.js        # Root layout with metadata
-│   └── page.js          # Homepage component
-└── components/
-    ├── SnowAnimation.js # Animated snow effect
-    ├── ContactForm.js   # Contact form component
-    └── Footer.js        # Footer component
 ```
 
 ## Deployment
 
-The easiest way to deploy is using [Vercel](https://vercel.com):
+The site is configured for Vercel deployment with `vercel.json`. Simply connect your GitHub repository to Vercel for automatic deployments.
 
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Add your environment variables in Vercel's dashboard
-4. Deploy!
+## Lead Management
 
-## Technologies Used
+Form submissions are saved to `/data/leads/` as JSON files. Integrate with your preferred email service by updating the API route at `src/app/api/lead/route.js`.
 
-- **Next.js 15** - React framework
-- **Tailwind CSS 4** - Utility-first CSS framework
-- **React 19** - UI library
+## SEO Features
+
+- Structured data (JSON-LD) for LocalBusiness, FAQPage, and Reviews
+- Optimized meta tags and OpenGraph
+- Local SEO with city-specific content
+- Sitemap and robots.txt
+- Semantic HTML structure
+
+## Performance
+
+- Lighthouse score optimized for 90+ on mobile
+- Image optimization with Next.js
+- Font preloading
+- Lazy loading for non-critical sections
+- CSS-only snowfall animation (low CPU impact)
 
 ## License
 
-All rights reserved. © The Snow Guy
+© 2024 The Snow Guy. Family-owned in Michigan.
