@@ -4,7 +4,7 @@ import { siteConfig } from "@/lib/site";
 export function Logo({ className }: { className?: string }) {
   return (
     <Image
-      src="/snowguy-logo.png"
+      src="/snowguylogo.png"
       alt={`${siteConfig.name} Logo`}
       width={60}
       height={60}
