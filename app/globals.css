@@ -11,10 +11,6 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-  
   body {
     @apply bg-snow-white font-inter text-slate-900 antialiased;
   }
