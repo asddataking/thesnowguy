@@ -17,6 +17,9 @@ const config: Config = {
           bg: "var(--snow-bg)",
         },
       },
+      backgroundImage: {
+        'hero-gradient': 'linear-gradient(135deg, #e8eaed 0%, #f0f4f8 50%, #e8eaed 100%)',
+      },
       fontFamily: {
         bebas: ["var(--font-bebas)", "Impact", "sans-serif"],
         inter: ["var(--font-inter)", "system-ui", "sans-serif"],

@@ -89,7 +89,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-100 via-blue-50 to-slate-50"
+      className="relative min-h-screen overflow-hidden bg-hero-gradient"
     >
       {/* Background noise texture */}
       <div
