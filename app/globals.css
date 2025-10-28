@@ -12,7 +12,8 @@
 
 @layer base {
   body {
-    @apply bg-snow-white font-inter text-slate-900 antialiased;
+    @apply font-inter text-slate-900 antialiased;
+    background-color: var(--snow-white);
   }
 
   html {
