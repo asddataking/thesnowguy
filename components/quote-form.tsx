@@ -201,7 +201,7 @@ export function QuoteForm() {
               Prefer to Call or Text?
             </h3>
             <p className="mb-6 text-slate-600">
-              We're here to help! Reach out anytime for immediate assistance.
+              We&apos;re here to help! Reach out anytime for immediate assistance.
             </p>
           </div>
 

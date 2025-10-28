@@ -37,7 +37,7 @@ export function Testimonials({ testimonials }: TestimonialsProps) {
           >
             <Quote className="mb-4 h-10 w-10 text-snow-ice opacity-50" />
             <blockquote className="mb-4 text-lg text-slate-700">
-              "{testimonial.quote}"
+              &ldquo;{testimonial.quote}&rdquo;
             </blockquote>
             <cite className="not-italic font-medium text-snow-navy">
               — {testimonial.author}

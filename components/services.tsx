@@ -59,7 +59,7 @@ export function Services() {
         className="mt-16 rounded-2xl bg-gradient-to-r from-snow-ice to-blue-400 p-8 text-center shadow-lg"
       >
         <p className="mb-6 text-xl font-medium text-white md:text-2xl">
-          First snow? Don't wait—text The Snow Guy before it piles up.
+          First snow? Don&apos;t wait—text The Snow Guy before it piles up.
         </p>
         <Button
           size="lg"
