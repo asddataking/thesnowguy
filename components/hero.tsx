@@ -129,16 +129,13 @@ export function Hero() {
 
             {/* CTA Buttons */}
             <div className="mb-8 flex flex-wrap gap-4">
-              <Button
-                size="lg"
-                asChild
-                className="group"
+              <a
+                href={`tel:${siteConfig.phone}`}
+                className="group inline-flex items-center justify-center rounded-2xl bg-snow-ice px-8 py-4 text-lg font-medium text-snow-navy shadow-lg shadow-snow-ice/30 transition-all hover:bg-[#3D95EE] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-snow-ice focus-visible:ring-offset-2"
               >
-                <a href={`tel:${siteConfig.phone}`}>
-                  <Phone className="mr-2 h-5 w-5 transition-transform group-hover:rotate-12" />
-                  Call Now
-                </a>
-              </Button>
+                <Phone className="mr-2 h-5 w-5 transition-transform group-hover:rotate-12" />
+                Call Now
+              </a>
               <Button
                 size="lg"
                 variant="secondary"

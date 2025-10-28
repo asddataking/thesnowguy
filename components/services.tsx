@@ -61,17 +61,13 @@ export function Services() {
         <p className="mb-6 text-xl font-medium text-white md:text-2xl">
           First snow? Don&apos;t wait—text The Snow Guy before it piles up.
         </p>
-        <Button
-          size="lg"
-          variant="secondary"
-          className="bg-white text-snow-navy hover:bg-snow-gray"
-          asChild
+        <a
+          href={`tel:${siteConfig.phone}`}
+          className="inline-flex items-center justify-center rounded-2xl border-2 border-snow-navy bg-white px-8 py-4 text-lg font-medium text-snow-navy transition-all hover:bg-snow-gray focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-snow-ice focus-visible:ring-offset-2"
         >
-          <a href={`tel:${siteConfig.phone}`}>
-            <Phone className="mr-2 h-5 w-5" />
-            {siteConfig.phoneDisplay}
-          </a>
-        </Button>
+          <Phone className="mr-2 h-5 w-5" />
+          {siteConfig.phoneDisplay}
+        </a>
       </motion.div>
     </Section>
   );
